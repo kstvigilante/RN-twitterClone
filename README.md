@@ -1,0 +1,1 @@
+only tested on samsung galaxy s8
