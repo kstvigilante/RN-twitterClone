@@ -5,7 +5,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: colors.white,
-    paddingTop: 10,
+    paddingTop: 5,
   },
   logoContainer: {
     justifyContent: 'center',
@@ -20,9 +20,9 @@ export default StyleSheet.create({
     marginTop: 180,
   },
   headingText: {
-    fontSize: 28,
+    fontSize: 30,
     paddingLeft: 40,
-    paddingRight: 100,
+    paddingRight: 80,
     fontWeight: 'bold',
     color: colors.black,
   },

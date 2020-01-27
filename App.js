@@ -15,7 +15,7 @@ import Statusbar from './components';
 const App = () => {
   return (
     <View style={styles.mainScreen}>
-      <Statusbar backgroundColor="#eee" barStyle="light-content" />
+      <Statusbar backgroundColor="#ddd" barStyle="light-content" />
       <Navigation />
     </View>
   );
