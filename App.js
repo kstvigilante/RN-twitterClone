@@ -10,7 +10,7 @@ import React from 'react';
 import {View} from 'react-native';
 import styles from './style';
 import Navigation from './navigation';
-import Statusbar from './components';
+import {Statusbar} from './components';
 
 const App = () => {
   return (

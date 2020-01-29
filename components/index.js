@@ -1,3 +1,4 @@
 import Statusbar from './statusbar';
+import TextInput from './textInput';
 
-export default Statusbar;
+export {Statusbar, TextInput};
