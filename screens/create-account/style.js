@@ -42,7 +42,7 @@ export const BottomContainer = styled.View`
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 55px;
   border-style: solid;
   border-top-width: 0.5px;
   border-top-color: ${colors.lightGrey};

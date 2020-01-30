@@ -13,7 +13,6 @@ import {
   NextButtonText,
 } from './style';
 import {TextInput} from '../../components';
-import {KeyboardAvoidingView} from 'react-native';
 
 function CreateAccount() {
   return (
@@ -25,14 +24,13 @@ function CreateAccount() {
       <Heading>
         <HeadingText>Create your account</HeadingText>
       </Heading>
-      <KeyboardAvoidingView behavior="padding" keyboardVerticalOffset={-64}>
-        <TextInputContainer>
-          <TextInput placeholder="Name" />
-          <Mt50>
-            <TextInput placeholder="Phone number or email address" />
-          </Mt50>
-        </TextInputContainer>
-      </KeyboardAvoidingView>
+
+      <TextInputContainer>
+        <TextInput placeholder="Name" />
+        <Mt50>
+          <TextInput placeholder="Phone number or email address" />
+        </Mt50>
+      </TextInputContainer>
 
       <BottomContainer>
         <OptionText>Use email instead</OptionText>

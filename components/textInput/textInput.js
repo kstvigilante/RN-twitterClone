@@ -16,6 +16,7 @@ function TextInput(props) {
         setActive(true);
       }}
       active={active}
+      secureTextEntry={props.secureTextEntry}
     />
   );
 }
