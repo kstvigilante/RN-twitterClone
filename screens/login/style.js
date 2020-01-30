@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import colors from '../../theme';
-
+import Icon from 'react-native-vector-icons/Entypo';
 import {Dimensions} from 'react-native';
 
 const {width, height} = Dimensions.get('window');
@@ -100,4 +100,15 @@ export const NextButton = styled.View`
 export const NextButtonText = styled.Text`
   color: ${colors.white};
   font-weight: bold;
+`;
+
+export const EyeIcon = styled(Icon)`
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+`;
+
+export const PasswordInput = styled.View`
+  flex-direction: row;
+  align-items: center;
 `;

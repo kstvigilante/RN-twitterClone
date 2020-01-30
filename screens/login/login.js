@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Container,
   LogoContainer,
@@ -15,11 +15,16 @@ import {
   BottomContainer,
   NextButton,
   NextButtonText,
+  EyeIcon,
+  PasswordInput,
 } from './style';
 import {TextInput} from '../../components';
-import Icon from 'react-native-vector-icons/Entypo';
+import {TouchableWithoutFeedback} from 'react-native';
+import colors from '../../theme';
 
 export default function Login() {
+  const [active, setactive] = useState(false);
+
   return (
     <Container>
       <LogoContainer>
@@ -40,8 +45,23 @@ export default function Login() {
         </UserInputCont>
         <UserPasswordCont>
           <Label>Password</Label>
-          <TextInput secureTextEntry={true} />
-          <Icon name="eye" size={30} color="#900" />
+          <PasswordInput>
+            <TextInput
+              secureTextEntry={!active}
+              style={{flex: 1, paddingRight: 30}}
+              active={active}
+            />
+            <TouchableWithoutFeedback
+              onPress={() => {
+                setactive(!active);
+              }}>
+              <EyeIcon
+                name="eye"
+                size={24}
+                color={active ? colors.blue : colors.grey}
+              />
+            </TouchableWithoutFeedback>
+          </PasswordInput>
         </UserPasswordCont>
       </LoginContainer>
       <ForgottenPassword>Forgotten your password?</ForgottenPassword>

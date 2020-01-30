@@ -8,7 +8,6 @@ export const StyledTextInput = styled.TextInput`
   padding-bottom: 5px;
   padding-top: 5px;
   font-size: 18px;
-  
 `;
 
 export const StyledTextInputWithMargin = styled(StyledTextInput)`
