@@ -16,6 +16,8 @@ import {
   MomentsScreen,
 } from '../screens';
 
+import DrawerNavigation from './drawer-navigation';
+
 const TwitterSocial = createDrawerNavigator(
   {
     HomeScreen: {
@@ -45,6 +47,8 @@ const TwitterSocial = createDrawerNavigator(
   },
   {
     initialRouteName: 'HomeScreen',
+    contentComponent: DrawerNavigation,
+    drawerWidth: '90%',
   },
 );
 
