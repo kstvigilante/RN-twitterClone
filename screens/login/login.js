@@ -22,8 +22,14 @@ import {TextInput} from '../../components';
 import {TouchableWithoutFeedback} from 'react-native';
 import colors from '../../theme';
 
-export default function Login() {
+export default function Login(props) {
   const [active, setactive] = useState(false);
+
+  const {navigation} = props;
+
+  const goToTwitterSocial = () => {
+    navigation.navigate('TwitterSocial');
+  };
 
   return (
     <Container>
@@ -66,9 +72,11 @@ export default function Login() {
       </LoginContainer>
       <ForgottenPassword>Forgotten your password?</ForgottenPassword>
       <BottomContainer>
-        <NextButton>
-          <NextButtonText>Log in</NextButtonText>
-        </NextButton>
+        <TouchableWithoutFeedback onPress={goToTwitterSocial}>
+          <NextButton>
+            <NextButtonText>Log in</NextButtonText>
+          </NextButton>
+        </TouchableWithoutFeedback>
       </BottomContainer>
     </Container>
   );
