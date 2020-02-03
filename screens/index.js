@@ -9,6 +9,9 @@ import ListsScreen from './lists-screen';
 import TopicsScreen from './topics-screen';
 import BookmarksScreen from './bookmarks-screen';
 import MomentsScreen from './moments-screen';
+import SearchTwitter from './search-twitter';
+import Notifcations from './notifications';
+import Messages from './messages';
 
 export {
   StartupScreen,
@@ -22,4 +25,7 @@ export {
   TopicsScreen,
   BookmarksScreen,
   MomentsScreen,
+  SearchTwitter,
+  Notifcations,
+  Messages,
 };

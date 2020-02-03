@@ -14,14 +14,37 @@ import {
   TopicsScreen,
   BookmarksScreen,
   MomentsScreen,
+  SearchTwitter,
+  Notifcations,
+  Messages,
 } from '../screens';
 
 import DrawerNavigation from './drawer-navigation';
 
-const TwitterSocial = createDrawerNavigator(
+const HomeScreenTabNav = createBottomTabNavigator(
   {
     HomeScreen: {
       screen: HomeScreen,
+    },
+    SearchTwitter: {
+      screen: SearchTwitter,
+    },
+    Notifcations: {
+      screen: Notifcations,
+    },
+    Messages: {
+      screen: Messages,
+    },
+  },
+  {
+    initialRouteName: 'HomeScreen',
+  },
+);
+
+const TwitterSocial = createDrawerNavigator(
+  {
+    HomeScreenTabNav: {
+      screen: HomeScreenTabNav,
     },
     ProfileScreen: {
       screen: ProfileScreen,
@@ -46,7 +69,7 @@ const TwitterSocial = createDrawerNavigator(
     },
   },
   {
-    initialRouteName: 'HomeScreen',
+    initialRouteName: 'HomeScreenTabNav',
     contentComponent: DrawerNavigation,
     drawerWidth: '90%',
   },
