@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, TouchableWithoutFeedback} from 'react-native';
+import {TouchableWithoutFeedback} from 'react-native';
 import {Header, HeaderContent, Menu, MenuLine} from './style';
 
 export default function PageHeader(props) {
   return (
-    <Header>
+    <Header shouldBorder={props.shouldBorder}>
       <TouchableWithoutFeedback onPress={() => props.navigation.openDrawer()}>
         <Menu>
           <MenuLine />

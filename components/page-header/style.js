@@ -6,7 +6,7 @@ export const Header = styled.View`
   padding: 15px 20px;
   align-items: center;
   border-style: solid;
-  border-bottom-width: 0.5px;
+  border-bottom-width: ${props => (props.shouldBorder ? '0.5px' : '0px')};
   border-bottom-color: ${colors.lightGrey};
 `;
 
