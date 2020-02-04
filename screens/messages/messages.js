@@ -1,10 +1,14 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {Container, HeaderTitle} from './style';
+import {PageHeader} from '../../components';
 
-export default function Messages() {
+export default function Messages(props) {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>this will be Messages</Text>
-    </View>
+    <Container>
+      <PageHeader {...props}>
+        <HeaderTitle>Messages</HeaderTitle>
+      </PageHeader>
+    </Container>
   );
 }

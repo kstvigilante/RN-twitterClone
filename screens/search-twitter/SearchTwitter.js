@@ -1,10 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Container, SearchInput} from './style';
+import {PageHeader} from '../../components';
 
-export default function SearchTwitter() {
+export default function SearchTwitter(props) {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>this will SearchTwitter</Text>
-    </View>
+    <Container>
+      <PageHeader {...props}>
+        <SearchInput placeholder="search twitter" />
+      </PageHeader>
+    </Container>
   );
 }
