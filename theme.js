@@ -5,6 +5,7 @@ const colors = {
   white: '#ffffff',
   lightGrey: '#ddd',
   lightBlue: 'rgba(29,161,242,0.5)',
+  aliceBlue: '#f1f8ff',
 };
 
 export default colors;
